@@ -1,0 +1,35 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Generated Kotlin state and build outputs in every module
+.kotlin/
+**/build/
+
+# Local Android Studio project settings
+.idea/
+
+# Local secrets and signing keys
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.pem
+*.p12
+key.properties
+keystore.properties
+service-account*.json
+*-firebase-adminsdk-*.json
