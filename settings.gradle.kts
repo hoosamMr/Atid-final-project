@@ -22,7 +22,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LDB"
+rootProject.name = "Doseia"
 include(":app")
 include(":core:model")
 include(":core:data")

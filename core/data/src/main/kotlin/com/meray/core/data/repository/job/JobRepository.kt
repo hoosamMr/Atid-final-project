@@ -1,4 +1,4 @@
-package com.meray.core.data.repository
+package com.meray.core.data.repository.job
 
 import com.meray.core.model.Job
 import kotlinx.coroutines.flow.Flow

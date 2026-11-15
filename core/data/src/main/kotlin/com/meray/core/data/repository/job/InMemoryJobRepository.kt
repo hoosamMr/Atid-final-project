@@ -1,4 +1,4 @@
-package com.meray.core.data.repository
+package com.meray.core.data.repository.job
 
 import com.meray.core.model.Customer
 import com.meray.core.model.Job
@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
-class InMemoryJobRepository : JobRepository{
+class InMemoryJobRepository : JobRepository {
 
     private val jobs = MutableStateFlow(
         listOf(
