@@ -15,7 +15,9 @@ import javax.inject.Singleton
 object RepositoryModule {
     @Provides
     @Singleton
-    fun provideJobRepository(): JobRepository = InMemoryJobRepository()
+    fun provideJobRepository(
+        customerRepository: CustomerRepository
+    ) : JobRepository = InMemoryJobRepository(customerRepository)
 
     @Provides @Singleton fun provideCustomerRepository(): CustomerRepository = InMemoryCustomerRepository()
 
