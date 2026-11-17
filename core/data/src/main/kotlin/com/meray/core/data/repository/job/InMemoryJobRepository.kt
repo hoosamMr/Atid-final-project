@@ -1,13 +1,10 @@
 package com.meray.core.data.repository.job
 
 import com.meray.core.data.repository.customer.CustomerRepository
-import com.meray.core.model.Customer
 import com.meray.core.model.Job
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.map
 
 class InMemoryJobRepository(
     private  val customerRepository: CustomerRepository

@@ -6,7 +6,7 @@ import androidx.navigation3.runtime.NavKey
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
-import com.meray.doseia.Greeting
+import com.meray.doseia.customers.CustomersScreen
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -21,7 +21,7 @@ internal fun DoseiaNavDisplay(modifier: Modifier = Modifier) {
         modifier = modifier,
         entryProvider = entryProvider {
             entry<Home> {
-                Greeting(name = "Android")
+                CustomersScreen(modifier)
             }
         }
     )
